@@ -9,4 +9,19 @@ def binary_search(list,target):
             first = midpoint + 1
         else:
             last = midpoint - 1
+    return None
 
+
+def verify(index):
+    if index is None:
+        print("Target Found at index:", index)
+    else:
+        print("Target not found in list:",index)
+
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+results = binary_search(numbers,12)
+verify(results)
+results = binary_search(numbers,6)
+verify(results)
